@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern Book Search App powered by the Google Books API.">
+  <title>Modern Book Search App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="app-header">
+      <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Modern Book Search App home">
+          <span class="brand-mark">B</span>
+          <span>BookSearch</span>
+        </a>
+        <a class="profile-link" href="https://github.com/yashbajaj02" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Google Books powered discovery</p>
+        <h1 id="hero-title">Find your next read at light speed.</h1>
+        <p class="hero-copy">
+          Search millions of titles with instant suggestions, rich previews, and a polished interface built for every screen.
+        </p>
+
+        <form class="search-panel" id="searchForm" autocomplete="off">
+          <label class="sr-only" for="searchInput">Search books</label>
+          <div class="search-box" id="searchBox">
+            <span class="search-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M10.8 18.1a7.3 7.3 0 1 1 5.2-2.2l4 4a1.2 1.2 0 0 1-1.7 1.7l-4-4a7.2 7.2 0 0 1-3.5.9Zm0-2.4a4.9 4.9 0 1 0 0-9.8 4.9 4.9 0 0 0 0 9.8Z"/>
+              </svg>
+            </span>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Search Atomic Habits, design, science fiction..."
+              aria-label="Search books"
+              aria-autocomplete="list"
+              aria-controls="suggestionsList"
+              aria-expanded="false"
+            >
+            <button class="search-button" type="submit">Search</button>
+          </div>
+          <ul class="suggestions" id="suggestionsList" role="listbox" aria-label="Book suggestions"></ul>
+        </form>
+      </section>
+    </header>
+
+    <main>
+      <section class="status-row" aria-live="polite">
+        <div>
+          <p class="section-kicker">Library results</p>
+          <h2 id="resultsTitle">Start typing to discover books</h2>
+        </div>
+        <p class="result-count" id="resultCount">0 books</p>
+      </section>
+
+      <div class="loader" id="loader" aria-label="Loading books" hidden>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <section class="message" id="message" hidden></section>
+      <section class="books-grid" id="booksGrid" aria-label="Book results"></section>
+    </main>
+  </div>
+
+  <script src="main.js?v=20260521-debug"></script>
+</body>
+</html>
