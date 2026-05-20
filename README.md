@@ -1,92 +1,167 @@
-# Modern Book Search App
+# 📚 Modern Book Search App
 
-A modern, responsive book discovery web app powered by the Google Books API. It includes instant autocomplete suggestions, keyboard navigation, fast search results, polished dark UI, loading states, and clear error handling.
+A modern and responsive book discovery web app powered by the Google Books API.
+This project features live autocomplete suggestions, fast search results, smooth animations, keyboard navigation, and a premium dark futuristic UI.
 
-## Features
+## 🌐 Live Demo
 
-- Search books using the Google Books API
-- Live autocomplete suggestions while typing
-- Maximum 6 dropdown suggestions
-- Keyboard support for `Enter`, `Arrow Up`, and `Arrow Down`
-- Book cards with cover, title, author, published date, and description
-- `Preview Book` and `More Info` links
-- Premium dark futuristic interface
-- Glassmorphism search bar
-- Blue neon hover effects
-- Responsive layout for desktop, tablet, and mobile
-- Smooth animations and loading indicators
-- GitHub Pages compatible
+👉 https://yashbajaj02.github.io/Modern-Book-Search/
 
-## Tech Stack
+---
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Google Books API
+# ✨ Features
 
-## How To Run Locally
+* 🔍 Search books using Google Books API
+* ⚡ Live autocomplete suggestions while typing
+* 🎯 Instant dropdown suggestions
+* ⌨️ Keyboard support (`Enter`, `Arrow Up`, `Arrow Down`)
+* 📖 Book cards with:
 
-1. Download or clone this repository.
-2. Open the project folder.
-3. Open `index.html` directly in your browser.
+  * Cover image
+  * Title
+  * Author
+  * Published date
+  * Description
+* 🔗 Preview Book & More Info buttons
+* 🌙 Premium dark futuristic UI
+* 💎 Glassmorphism search bar
+* 🔵 Neon hover effects & smooth animations
+* 📱 Fully responsive design
+* 🚀 Fast performance
+* ❌ Error handling & loading states
+* 🌐 GitHub Pages compatible
 
-No build step, backend, package manager, or framework is required.
+---
 
-## How To Add API Key Safely
+# 🛠️ Tech Stack
 
-The API key is stored once in `main.js`:
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* Google Books API
 
-```js
-const API_KEY = "PASTE_YOUR_BROWSER_RESTRICTED_API_KEY_HERE";
+---
+
+# 📂 Project Structure
+
+```bash
+Modern-Book-Search/
+│
+├── index.html
+├── style.css
+├── main.js
+├── README.md
+└── .gitignore
 ```
 
-For a public static app, the key will be visible in browser code. That is normal for client-side API usage, so protect it with Google Cloud restrictions:
+---
 
-1. Go to Google Cloud Console.
-2. Open **APIs & Services**.
-3. Enable **Google Books API**.
-4. Open **Credentials** and select your API key.
-5. Under **Application restrictions**, choose **HTTP referrers (web sites)**.
-6. Add allowed referrers such as:
-   - `http://localhost:*`
-   - `https://your-github-username.github.io/*`
-   - `https://your-custom-domain.com/*`
-7. Under **API restrictions**, allow only **Google Books API**.
-8. Save the changes.
+# 🚀 Run Locally
 
-Do not place private server secrets in this repository. This app is designed for a browser-restricted public API key, which keeps it compatible with GitHub Pages and helps avoid GitHub secret scanning problems.
+1. Clone the repository
 
-## GitHub Pages Deployment
+```bash
+git clone https://github.com/yashbajaj02/Modern-Book-Search.git
+```
 
-1. Push the project to a GitHub repository.
-2. Go to repository **Settings**.
-3. Open **Pages**.
-4. Select the `main` branch and root folder.
-5. Save and wait for the deployment URL.
-6. Add the GitHub Pages URL to the allowed HTTP referrers for your Google Books API key.
+2. Open the project folder
 
-## Screenshots
+3. Run `index.html` directly in your browser
 
-Add screenshots here after deployment:
+OR
 
-- Desktop home and search results
-- Mobile autocomplete dropdown
-- Book card grid
+Use VS Code Live Server extension for the best experience.
 
-## Future Improvements
+---
 
-- Add category filters
-- Add sorting by newest or relevance
-- Add saved favorites using local storage
-- Add pagination or infinite scrolling
-- Add theme toggle
-- Add recent searches
+# 🔐 API Key Setup
 
-## Author
+Inside `main.js`:
 
-**Yash Bajaj**
+```js
+const API_KEY = "PASTE_YOUR_API_KEY_HERE";
+```
 
-- GitHub: [https://github.com/yashbajaj02](https://github.com/yashbajaj02)
-- LinkedIn: [https://www.linkedin.com/in/yashbajaj02/](https://www.linkedin.com/in/yashbajaj02/)
-- Instagram: [https://www.instagram.com/yash___bajaj/](https://www.instagram.com/yash___bajaj/)
-- YouTube: [https://www.youtube.com/@LyricJunction](https://www.youtube.com/@LyricJunction)
+## Recommended Security Setup
+
+To keep your API key secure:
+
+1. Open Google Cloud Console
+2. Enable **Google Books API**
+3. Open **Credentials**
+4. Select your API key
+5. Under **Application Restrictions**:
+
+   * Choose **HTTP referrers**
+6. Add:
+
+```txt
+http://localhost:*
+https://yashbajaj02.github.io/*
+```
+
+7. Under **API Restrictions**:
+
+   * Allow only **Books API**
+
+This prevents unauthorized usage of your API key.
+
+---
+
+# 🌍 GitHub Pages Deployment
+
+1. Push project to GitHub
+2. Open repository Settings
+3. Go to Pages
+4. Select:
+
+   * Branch → `main`
+   * Folder → `/root`
+5. Save changes
+
+Your site will be live at:
+
+```txt
+https://yashbajaj02.github.io/Modern-Book-Search/
+```
+
+---
+
+# 📸 Screenshots
+
+Add screenshots here after deployment.
+
+---
+
+# 🔮 Future Improvements
+
+* 📚 Category filters
+* ❤️ Favorite books
+* 🔄 Infinite scrolling
+* 🎨 Theme switcher
+* 🕘 Recent searches
+* ⭐ Ratings system
+
+---
+
+# 👨‍💻 Author
+
+## Yash Bajaj
+
+* GitHub
+  https://github.com/yashbajaj02
+
+* LinkedIn
+  https://www.linkedin.com/in/yashbajaj02/
+
+* Instagram
+  https://www.instagram.com/yash___bajaj/
+
+* YouTube
+  https://www.youtube.com/@LyricJunction
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a star on GitHub ⭐
